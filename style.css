@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
+
+.sidenav {
+    width: 60%;
+    float: left;
+    overflow-x: hidden;
+    margin-top: 30PX;
+}
+
+
+.main {
+    width: 40%;
+    float: right;
+    margin-top: 200px;
+    overflow-x: hidden;
+    color: #fff;
+}
+
+.login-main-text {
+    margin-top: 20%;
+    padding: 60px;
+    color: #fff;
+}
+
+.login-main-text h2 {
+    font-weight: 300;
+}
+
+.btn-black {
+    color: #fff;
+}
+
+:root {
+    font-family: roboto, sans-serif;
+}
