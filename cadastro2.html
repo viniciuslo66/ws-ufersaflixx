@@ -1,41 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro | UfersaFlix</title>
     <style>
-        body{
+        body {
             font-family: roboto;
             background-color: #393939;
         }
-        .box{
+
+        .box {
             color: white;
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%,-50%);
+            transform: translate(-50%, -50%);
             background-color: #00000099;
             padding: 15px;
             border-radius: 15px;
             width: 30%;
         }
-        .login-main-text{
+
+        .login-main-text {
             position: absolute;
             top: -23%;
             left: 6%;
         }
-        legend{
+
+        legend {
             padding: 15px;
             text-align: center;
-            background-color: #393939;;
+            background-color: #393939;
+            ;
             border-radius: 16px;
         }
-        .inputBox{
+
+        .inputBox {
             position: relative;
         }
-        .inputUser{
+
+        .inputUser {
             background: none;
             border: none;
             border-bottom: 1px solid white;
@@ -45,27 +52,31 @@
             width: 100%;
             letter-spacing: 2px;
         }
-        .labelInput{
+
+        .labelInput {
             position: absolute;
             top: 0px;
             left: 0px;
             pointer-events: none;
             transition: .5s;
         }
-        .inputUser:focus ~ .labelInput,
-        .inputUser:valid ~ .labelInput{
+
+        .inputUser:focus~.labelInput,
+        .inputUser:valid~.labelInput {
             top: -20px;
             font-size: 12px;
             color: white;
         }
-        #data_nascimento{
+
+        #data_nascimento {
             border: none;
             padding: 8px;
             border-radius: 10px;
             outline: none;
             font-size: 15px;
         }
-        #submit{
+
+        #submit {
             background-color: #7D8AFE;
             width: 100%;
             border: none;
@@ -75,18 +86,20 @@
             cursor: pointer;
             border-radius: 10px;
         }
-        #submit:hover{
+
+        #submit:hover {
             background-color: #5d6be8;
         }
     </style>
 </head>
+
 <body>
     <div class="box">
         <div class="sidenav">
             <div class="login-main-text">
                 <img src="assets/LOGOloginpng.png" alt="">
             </div>
-        <form action="">
+            <form action="">
                 <legend><b>Faça seu Cadastro:</b></legend>
                 <br>
                 <div class="inputBox">
@@ -113,7 +126,8 @@
                 </div>
                 <br><br>
                 <input type="submit" name="submit" id="submit">
-        </form>
-    </div>
+            </form>
+        </div>
 </body>
+
 </html>
