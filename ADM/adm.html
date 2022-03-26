@@ -11,7 +11,7 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 
-    <title>Home - UfersaFlix</title>
+    <title>ADM - UfersaFlix</title>
 </head>
 
 <body style="background-color: #393939; color: white;">
@@ -34,7 +34,7 @@
         </div>
     </nav>
     <br>
-    <div class="container">
+    <div class="container-fluid">
         <nav>
             <div class="nav nav-tabs" id="nav-tab" role="tablist">
                 <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
@@ -93,24 +93,10 @@
                                 <td>00/00/0000</td>
                                 <td><a href="#"><img src="../view/botao-editar (1).png" data-bs-toggle="modal"
                                             data-bs-target="#exampleModal"></a></td>
+
                                 <!-- modal editar -->
                                 <div class="modal fade" id="exampleModal" tabindex="-1"
                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-lg">
-                                        <div class="modal-content" style="background: #393939;">
-                                            <div class="modal-body">
-                                                <div class="container">
-                                                    
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- fim modal editar -->
-                                <td><a href="#"><img src="../view/botao-excluir.png" data-bs-toggle="modal"
-                                            data-bs-target="#exampleModal1"></a></td>
-                                <div class="modal fade" id="exampleModal" tabindex="-1"
-                                    aria-labelledby="exampleModalLabel1" aria-hidden="true">
                                     <div class="modal-dialog modal-lg">
                                         <div class="modal-content" style="background: #393939;">
                                             <div class="modal-body">
@@ -157,6 +143,24 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!-- fim modal editar -->
+
+                                <td><a href="#"><img src="../view/botao-excluir.png" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal1"></a></td>
+
+                                <!-- modal excluir -->
+                                <div class="modal fade" id="exampleModal1" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content" style="background: #393939;">
+                                            <div class="modal-body">
+                                                <div class="container">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </tr>
                             <tr>
                                 <th scope="row">2</th>
@@ -173,46 +177,6 @@
                                 <td>ON</td>
                                 <td>Pedro</td>
                                 <td>pedro@gmail.com</td>
-                                <td>2222****</td>
-                                <td>00/00/0000</td>
-                                <td><a href="admUsuarioEdit.html"><img src="../view/botao-editar (1).png"></a></td>
-                                <td><a href="admUsuarioDelete.html"><img src="../view/botao-excluir.png"></a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">4</th>
-                                <td>BAN</td>
-                                <td>Felipe</td>
-                                <td>felipe@gmail.com</td>
-                                <td>2222****</td>
-                                <td>00/00/0000</td>
-                                <td><a href="admUsuarioEdit.html"><img src="../view/botao-editar (1).png"></a></td>
-                                <td><a href="admUsuarioDelete.html"><img src="../view/botao-excluir.png"></a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">5</th>
-                                <td>BAN</td>
-                                <td>Paulo</td>
-                                <td>paulo@gmail.com</td>
-                                <td>2222****</td>
-                                <td>00/00/0000</td>
-                                <td><a href="admUsuarioEdit.html"><img src="../view/botao-editar (1).png"></a></td>
-                                <td><a href="admUsuarioDelete.html"><img src="../view/botao-excluir.png"></a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">6</th>
-                                <td>ON</td>
-                                <td>Ricardo</td>
-                                <td>ricardo@gmail.com</td>
-                                <td>2222****</td>
-                                <td>00/00/0000</td>
-                                <td><a href="admUsuarioEdit.html"><img src="../view/botao-editar (1).png"></a></td>
-                                <td><a href="admUsuarioDelete.html"><img src="../view/botao-excluir.png"></a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">7</th>
-                                <td>ON</td>
-                                <td>Roberto</td>
-                                <td>roberto@gmail.com</td>
                                 <td>2222****</td>
                                 <td>00/00/0000</td>
                                 <td><a href="admUsuarioEdit.html"><img src="../view/botao-editar (1).png"></a></td>
@@ -223,184 +187,81 @@
                 </div>
             </div>
             <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                <div>
-                    <table class="table" style="background-color: white;">
-                        <thead>
-                            <tr>
-                                <th scope="col">ID</th>
-                                <th scope="col">STATUS</th>
-                                <th scope="col">NOME</th>
-                                <th scope="col">E-MAIL</th>
-                                <th scope="col">MATRÍCULA</th>
-                                <th scope="col">DATA DE NASCIMENTO</th>
-                                <th scope="col">EDITAR</th>
-                                <th scope="col">DELETAR</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>ON</td>
-                                <td>João</td>
-                                <td>joao@gmail.com</td>
-                                <td>2222****</td>
-                                <td>00/00/0000</td>
-                                <td><a href="admUsuarioEdit.html"><img src="../view/botao-editar (1).png"></a></td>
-                                <td><a href="admUsuarioDelete.html"><img src="../view/botao-excluir.png"></a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>ON</td>
-                                <td>Lucas</td>
-                                <td>lucas@gmail.com</td>
-                                <td>2222****</td>
-                                <td>00/00/0000</td>
-                                <td><a href="admUsuarioEdit.html"><img src="../view/botao-editar (1).png"></a></td>
-                                <td><a href="admUsuarioDelete.html"><img src="../view/botao-excluir.png"></a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>ON</td>
-                                <td>Pedro</td>
-                                <td>pedro@gmail.com</td>
-                                <td>2222****</td>
-                                <td>00/00/0000</td>
-                                <td><a href="admUsuarioEdit.html"><img src="../view/botao-editar (1).png"></a></td>
-                                <td><a href="admUsuarioDelete.html"><img src="../view/botao-excluir.png"></a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">4</th>
-                                <td>BAN</td>
-                                <td>Felipe</td>
-                                <td>felipe@gmail.com</td>
-                                <td>2222****</td>
-                                <td>00/00/0000</td>
-                                <td><a href="admUsuarioEdit.html"><img src="../view/botao-editar (1).png"></a></td>
-                                <td><a href="admUsuarioDelete.html"><img src="../view/botao-excluir.png"></a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">5</th>
-                                <td>BAN</td>
-                                <td>Paulo</td>
-                                <td>paulo@gmail.com</td>
-                                <td>2222****</td>
-                                <td>00/00/0000</td>
-                                <td><a href="admUsuarioEdit.html"><img src="../view/botao-editar (1).png"></a></td>
-                                <td><a href="admUsuarioDelete.html"><img src="../view/botao-excluir.png"></a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">6</th>
-                                <td>ON</td>
-                                <td>Ricardo</td>
-                                <td>ricardo@gmail.com</td>
-                                <td>2222****</td>
-                                <td>00/00/0000</td>
-                                <td><a href="admUsuarioEdit.html"><img src="../view/botao-editar (1).png"></a></td>
-                                <td><a href="admUsuarioDelete.html"><img src="../view/botao-excluir.png"></a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">7</th>
-                                <td>ON</td>
-                                <td>Roberto</td>
-                                <td>roberto@gmail.com</td>
-                                <td>2222****</td>
-                                <td>00/00/0000</td>
-                                <td><a href="admUsuarioEdit.html"><img src="../view/botao-editar (1).png"></a></td>
-                                <td><a href="admUsuarioDelete.html"><img src="../view/botao-excluir.png"></a></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="container-fluid">
+                    <form>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="nome_filme">NOME</label>
+                                    <input type="text" class="form-control" id="nome_filme">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="sinopse_filme">SINOPSE DO FILME</label>
+                                    <textarea class="form-control" rows="4" id="sinopse_filme"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label class="form-group">
+                                        <label for="imagem_apresentacao">IMAGEM:</label>
+                                        <label class="col-12 btn btn-default" id="botao_imagem_apresentacao">
+                                            ADICIONAR IMG <input type="file" id="imagem_apresentacao"
+                                                class="form-control-file" hidden>
+                                        </label>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="tags_filme">TAGS:</label>
+                                    <input type="text" class="form-control" id="tags_filme">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="link_filme">LINK:</label>
+                                    <input type="text" class="form-control" id="link_filme">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="genero_filme">GÊNERO:</label>
+                                    <input type="text" class="form-control" id="genero_filme">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="elenco_filme">ELENCO:</label>
+                                    <textarea class="form-control" rows="4" id="elenco_filme"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="diretor_filme">DIRETOR</label>
+                                    <input type="text" class="form-control" id="diretor_filme">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <a href=""><button type="submit" id="botao_submit"
+                                    class="btn btn-primary">Adicionar</button></a>
+                        </div>
+                    </form>
                 </div>
             </div>
-            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                <div>
-                    <table class="table" style="background-color: white;">
-                        <thead>
-                            <tr>
-                                <th scope="col">ID</th>
-                                <th scope="col">STATUS</th>
-                                <th scope="col">NOME</th>
-                                <th scope="col">E-MAIL</th>
-                                <th scope="col">MATRÍCULA</th>
-                                <th scope="col">DATA DE NASCIMENTO</th>
-                                <th scope="col">EDITAR</th>
-                                <th scope="col">DELETAR</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>ON</td>
-                                <td>João</td>
-                                <td>joao@gmail.com</td>
-                                <td>2222****</td>
-                                <td>00/00/0000</td>
-                                <td><a href="admUsuarioEdit.html"><img src="../view/botao-editar (1).png"></a></td>
-                                <td><a href="admUsuarioDelete.html"><img src="../view/botao-excluir.png"></a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>ON</td>
-                                <td>Lucas</td>
-                                <td>lucas@gmail.com</td>
-                                <td>2222****</td>
-                                <td>00/00/0000</td>
-                                <td><a href="admUsuarioEdit.html"><img src="../view/botao-editar (1).png"></a></td>
-                                <td><a href="admUsuarioDelete.html"><img src="../view/botao-excluir.png"></a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>ON</td>
-                                <td>Pedro</td>
-                                <td>pedro@gmail.com</td>
-                                <td>2222****</td>
-                                <td>00/00/0000</td>
-                                <td><a href="admUsuarioEdit.html"><img src="../view/botao-editar (1).png"></a></td>
-                                <td><a href="admUsuarioDelete.html"><img src="../view/botao-excluir.png"></a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">4</th>
-                                <td>BAN</td>
-                                <td>Felipe</td>
-                                <td>felipe@gmail.com</td>
-                                <td>2222****</td>
-                                <td>00/00/0000</td>
-                                <td><a href="admUsuarioEdit.html"><img src="../view/botao-editar (1).png"></a></td>
-                                <td><a href="admUsuarioDelete.html"><img src="../view/botao-excluir.png"></a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">5</th>
-                                <td>BAN</td>
-                                <td>Paulo</td>
-                                <td>paulo@gmail.com</td>
-                                <td>2222****</td>
-                                <td>00/00/0000</td>
-                                <td><a href="admUsuarioEdit.html"><img src="../view/botao-editar (1).png"></a></td>
-                                <td><a href="admUsuarioDelete.html"><img src="../view/botao-excluir.png"></a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">6</th>
-                                <td>ON</td>
-                                <td>Ricardo</td>
-                                <td>ricardo@gmail.com</td>
-                                <td>2222****</td>
-                                <td>00/00/0000</td>
-                                <td><a href="admUsuarioEdit.html"><img src="../view/botao-editar (1).png"></a></td>
-                                <td><a href="admUsuarioDelete.html"><img src="../view/botao-excluir.png"></a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">7</th>
-                                <td>ON</td>
-                                <td>Roberto</td>
-                                <td>roberto@gmail.com</td>
-                                <td>2222****</td>
-                                <td>00/00/0000</td>
-                                <td><a href="admUsuarioEdit.html"><img src="../view/botao-editar (1).png"></a></td>
-                                <td><a href="admUsuarioDelete.html"><img src="../view/botao-excluir.png"></a></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+        </div>
+
+        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+            <div>
+
             </div>
         </div>
     </div>
