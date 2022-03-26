@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    background-color: #393939;
+    color: white;
+}
+
+.adm_heading {
+    text-align: center;
+}
+
+.main {
+    background-color: #626262;
+    width: 1327px;
+    height: 767px;
+    margin-bottom: 100px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+form {
+    padding-top: 30px;
+}
+
+.form-control {
+    background-color: #7D8AFE;
+    border-color: black;
+}
+
+.form-control::placeholder {
+    color: white;
+}
+
+#botao_imagem_apresentacao {
+    height: 15%;
+    border-color: black;
+    border-width: 1px;
+    color: white;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+.lado-esquerdo {
+    float: left;
+}
+
+.form-group {
+    width: 100%;
+}
+
+.lado-direito {
+    margin-top: 10%;
+    float: right;
+}
+
+#botao_submit {
+    background-color: #7D8AFE;
+    margin-top: 10%;
+    margin-left: 100%;
+    padding-right: 5%;
+    padding-left: 5%;
+}
