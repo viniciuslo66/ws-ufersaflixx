@@ -37,12 +37,13 @@
     <div class="container-fluid">
         <nav>
             <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
-                    type="button" role="tab" aria-controls="nav-home" aria-selected="true">USUÁRIO</button>
-                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
-                    type="button" role="tab" aria-controls="nav-profile" aria-selected="false">ADICIONAR FILMES</button>
-                <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
-                    type="button" role="tab" aria-controls="nav-contact" aria-selected="false">CATÁLOGO</button>
+                <button class="nav-link active" id="nav-usuario-tab" data-bs-toggle="tab" data-bs-target="#nav-usuario"
+                    type="button" role="tab" aria-controls="nav-usuario" aria-selected="true">USUÁRIO</button>
+                <button class="nav-link" id="nav-adicionarfilme-tab" data-bs-toggle="tab"
+                    data-bs-target="#nav-adicionarfilme" type="button" role="tab" aria-controls="nav-adicionarfilme"
+                    aria-selected="false">ADICIONAR FILMES</button>
+                <button class="nav-link" id="nav-catalogo-tap" data-bs-toggle="tab" data-bs-target="#nav-catalogo"
+                    type="button" role="tab" aria-controls="nav-catalogo" aria-selected="false">CATÁLOGO</button>
             </div>
         </nav>
         <br>
@@ -68,125 +69,127 @@
         </div>
         <br>
         <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                <div>
-                    <table class="table table-hover table-bordered" style="background-color: white;">
-                        <thead>
-                            <tr>
-                                <th scope="col">ID</th>
-                                <th scope="col">STATUS</th>
-                                <th scope="col">NOME</th>
-                                <th scope="col">E-MAIL</th>
-                                <th scope="col">MATRÍCULA</th>
-                                <th scope="col">DATA DE NASCIMENTO</th>
-                                <th scope="col">EDITAR</th>
-                                <th scope="col">DELETAR</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>ON</td>
-                                <td>João</td>
-                                <td>joao@gmail.com</td>
-                                <td>2222****</td>
-                                <td>00/00/0000</td>
-                                <td><a href="#"><img src="../view/botao-editar (1).png" data-bs-toggle="modal"
-                                            data-bs-target="#exampleModal"></a></td>
+            <!-- 1º tap -->
+            <div class="tab-pane fade show active" id="nav-usuario" role="tabpanel" aria-labelledby="nav-usuario-tab">
+                <table class="table table-hover table-bordered" style="background-color: white;">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">STATUS</th>
+                            <th scope="col">NOME</th>
+                            <th scope="col">E-MAIL</th>
+                            <th scope="col">MATRÍCULA</th>
+                            <th scope="col">DATA DE NASCIMENTO</th>
+                            <th scope="col">EDITAR</th>
+                            <th scope="col">DELETAR</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>ON</td>
+                            <td>João</td>
+                            <td>joao@gmail.com</td>
+                            <td>2222****</td>
+                            <td>00/00/0000</td>
+                            <td><a href="#"><img src="../view/botao-editar (1).png" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal"></a></td>
 
-                                <!-- modal editar -->
-                                <div class="modal fade" id="exampleModal" tabindex="-1"
-                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-lg">
-                                        <div class="modal-content" style="background: #393939;">
-                                            <div class="modal-body">
-                                                <div class="container">
-                                                    <div class="col-md-12">
-                                                        <a href="#"><img src="assets/cardfilme.jpg"
-                                                                class="img-fluid rounded mx-auto d-block" alt=""></a>
+                            <!-- modal editar -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content" style="background: #393939;">
+                                        <div class="modal-body">
+                                            <div class="container">
+                                                <div class="col-md-12">
+                                                    <a href="#"><img src="assets/cardfilme.jpg"
+                                                            class="img-fluid rounded mx-auto d-block" alt=""></a>
+                                                </div>
+                                                <br>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <h5>VINGADORES GUERRA INFINITA</h5>
                                                     </div>
-                                                    <br>
-                                                    <div class="row">
-                                                        <div class="col-6">
-                                                            <h5>VINGADORES GUERRA INFINITA</h5>
-                                                        </div>
-                                                        <div class="col-1">
-                                                            <img src="assets/CLASSIFICAÇÃO INFICATIVA/14 ANOS.png"
-                                                                style="max-width: 40px" alt="">
-                                                        </div>
-                                                        <div class="col-5" style="font-size: 10px;">
-                                                            <p>ao clicar no play sera redirecionado a outra página</p>
-                                                        </div>
+                                                    <div class="col-1">
+                                                        <img src="assets/CLASSIFICAÇÃO INFICATIVA/14 ANOS.png"
+                                                            style="max-width: 40px" alt="">
                                                     </div>
-                                                    <h6>SINOPSE: </h6>
-                                                    <div class="col-md-10" style="font-size: 13px;">
-                                                        <P>HOMEM DE FERRO, THOR, HULK E OS VINGADORES SE UNEM PARA
-                                                            COMBATER
-                                                            SEU
-                                                            INIMIGO MAIS PODEROSO, O MALIGNO THANOS. EM UMA MISSÃO PARA
-                                                            COLETAR
-                                                            TODAS AS SEIS PEDRAS INFINITAS, THANOS PLANEJA USÁ-LAS PARA
-                                                            INFLIGIR
-                                                            SUA
-                                                            VONTADE MALÉFICA SOBRE A REALIDADE.</P>
+                                                    <div class="col-5" style="font-size: 10px;">
+                                                        <p>ao clicar no play sera redirecionado a outra página</p>
                                                     </div>
-                                                    <h6>ELENCO: </h6>
-                                                    <div class="col-md-10" style="font-size: 13px;">
-                                                        <P>HOMEM DE FERRO.</P>
-                                                    </div>
-                                                    <h6>GÊNERO: </h6>
-                                                    <div class="col-md-10" style="font-size: 13px;">
-                                                        <P>AÇÃO E AVENTURA</P>
-                                                    </div>
+                                                </div>
+                                                <h6>SINOPSE: </h6>
+                                                <div class="col-md-10" style="font-size: 13px;">
+                                                    <P>HOMEM DE FERRO, THOR, HULK E OS VINGADORES SE UNEM PARA
+                                                        COMBATER
+                                                        SEU
+                                                        INIMIGO MAIS PODEROSO, O MALIGNO THANOS. EM UMA MISSÃO PARA
+                                                        COLETAR
+                                                        TODAS AS SEIS PEDRAS INFINITAS, THANOS PLANEJA USÁ-LAS PARA
+                                                        INFLIGIR
+                                                        SUA
+                                                        VONTADE MALÉFICA SOBRE A REALIDADE.</P>
+                                                </div>
+                                                <h6>ELENCO: </h6>
+                                                <div class="col-md-10" style="font-size: 13px;">
+                                                    <P>HOMEM DE FERRO.</P>
+                                                </div>
+                                                <h6>GÊNERO: </h6>
+                                                <div class="col-md-10" style="font-size: 13px;">
+                                                    <P>AÇÃO E AVENTURA</P>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- fim modal editar -->
+                            </div>
+                            <!-- fim modal editar -->
 
-                                <td><a href="#"><img src="../view/botao-excluir.png" data-bs-toggle="modal"
-                                            data-bs-target="#exampleModal1"></a></td>
+                            <td><a href="#"><img src="../view/botao-excluir.png" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal1"></a></td>
 
-                                <!-- modal excluir -->
-                                <div class="modal fade" id="exampleModal1" tabindex="-1"
-                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-lg">
-                                        <div class="modal-content" style="background: #393939;">
-                                            <div class="modal-body">
-                                                <div class="container">
+                            <!-- modal excluir -->
+                            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content" style="background: #393939;">
+                                        <div class="modal-body">
+                                            <div class="container">
 
-                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>ON</td>
-                                <td>Lucas</td>
-                                <td>lucas@gmail.com</td>
-                                <td>2222****</td>
-                                <td>00/00/0000</td>
-                                <td><a href="admUsuarioEdit.html"><img src="../view/botao-editar (1).png"></a></td>
-                                <td><a href="admUsuarioDelete.html"><img src="../view/botao-excluir.png"></a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>ON</td>
-                                <td>Pedro</td>
-                                <td>pedro@gmail.com</td>
-                                <td>2222****</td>
-                                <td>00/00/0000</td>
-                                <td><a href="admUsuarioEdit.html"><img src="../view/botao-editar (1).png"></a></td>
-                                <td><a href="admUsuarioDelete.html"><img src="../view/botao-excluir.png"></a></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                            </div>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>ON</td>
+                            <td>Lucas</td>
+                            <td>lucas@gmail.com</td>
+                            <td>2222****</td>
+                            <td>00/00/0000</td>
+                            <td><a href="admUsuarioEdit.html"><img src="../view/botao-editar (1).png"></a></td>
+                            <td><a href="admUsuarioDelete.html"><img src="../view/botao-excluir.png"></a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>ON</td>
+                            <td>Pedro</td>
+                            <td>pedro@gmail.com</td>
+                            <td>2222****</td>
+                            <td>00/00/0000</td>
+                            <td><a href="admUsuarioEdit.html"><img src="../view/botao-editar (1).png"></a></td>
+                            <td><a href="admUsuarioDelete.html"><img src="../view/botao-excluir.png"></a></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+
+            <!-- 2º tap -->
+
+            <div class="tab-pane fade" id="nav-adicionarfilme" role="tabpanel" aria-labelledby="nav-adicionarfilme-tab">
                 <div class="container-fluid">
                     <form>
                         <div class="row">
@@ -257,15 +260,193 @@
                     </form>
                 </div>
             </div>
-        </div>
 
-        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-            <div>
+            <!-- 3º tap -->
+            <div class="tab-pane fade" id="nav-catalogo" role="tabpanel" aria-labelledby="nav-catalogo-tap">
+                <table class="table table-hover table-bordered" style="background-color: white;">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">NOME</th>
+                            <th scope="col">SINOPSE</th>
+                            <th scope="col">IMAGEM</th>
+                            <th scope="col">TAGS</th>
+                            <th scope="col">LINK</th>
+                            <th scope="col">GÊNERO</th>
+                            <th scope="col">ELENCO</th>
+                            <th scope="col">DIRETOR</th>
+                            <th scope="col">EDITAR</th>
+                            <th scope="col">DELETAR</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>VINGADORES GUERRA INFINITE</td>
+                            <td>THANOS MATOU TODO MUNDO</td>
+                            <td><img src="../assets/cardfilme.jpg" alt="" style="width: 200px;"></td>
+                            <td>#homemdeferro #marvel</td>
+                            <td><a href="../index.html">link</a></td>
+                            <td>AÇÃO E AVENTURA</td>
+                            <td>HOMEM DE FERRO</td>
+                            <td>ALGUÉM NÃO IMPORTANTE</td>
+                            <td><a href="#"><img src="../view/botao-editar (1).png" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal"></a></td>
 
+                            <!-- modal editar -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content" style="background: #393939;">
+                                        <div class="modal-body">
+                                            <div class="container">
+                                                <div class="col-md-12">
+                                                    <a href="#"><img src="assets/cardfilme.jpg"
+                                                            class="img-fluid rounded mx-auto d-block" alt=""></a>
+                                                </div>
+                                                <br>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <h5>VINGADORES GUERRA INFINITA</h5>
+                                                    </div>
+                                                    <div class="col-1">
+                                                        <img src="assets/CLASSIFICAÇÃO INFICATIVA/14 ANOS.png"
+                                                            style="max-width: 40px" alt="">
+                                                    </div>
+                                                    <div class="col-5" style="font-size: 10px;">
+                                                        <p>ao clicar no play sera redirecionado a outra página</p>
+                                                    </div>
+                                                </div>
+                                                <h6>SINOPSE: </h6>
+                                                <div class="col-md-10" style="font-size: 13px;">
+                                                    <P>HOMEM DE FERRO, THOR, HULK E OS VINGADORES SE UNEM PARA
+                                                        COMBATER
+                                                        SEU
+                                                        INIMIGO MAIS PODEROSO, O MALIGNO THANOS. EM UMA MISSÃO PARA
+                                                        COLETAR
+                                                        TODAS AS SEIS PEDRAS INFINITAS, THANOS PLANEJA USÁ-LAS PARA
+                                                        INFLIGIR
+                                                        SUA
+                                                        VONTADE MALÉFICA SOBRE A REALIDADE.</P>
+                                                </div>
+                                                <h6>ELENCO: </h6>
+                                                <div class="col-md-10" style="font-size: 13px;">
+                                                    <P>HOMEM DE FERRO.</P>
+                                                </div>
+                                                <h6>GÊNERO: </h6>
+                                                <div class="col-md-10" style="font-size: 13px;">
+                                                    <P>AÇÃO E AVENTURA</P>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- fim modal editar -->
+
+                            <td><a href="#"><img src="../view/botao-excluir.png" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal1"></a></td>
+
+                            <!-- modal excluir -->
+                            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content" style="background: #393939;">
+                                        <div class="modal-body">
+                                            <div class="container">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>VINGADORES GUERRA INFINITE</td>
+                            <td>THANOS MATOU TODO MUNDO</td>
+                            <td><img src="../assets/cardfilme.jpg" alt="" style="width: 200px;"></td>
+                            <td>#homemdeferro #marvel</td>
+                            <td><a href="../index.html">link</a></td>
+                            <td>AÇÃO E AVENTURA</td>
+                            <td>HOMEM DE FERRO</td>
+                            <td>ALGUÉM NÃO IMPORTANTE</td>
+                            <td><a href="#"><img src="../view/botao-editar (1).png" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal"></a></td>
+
+                            <!-- modal editar -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content" style="background: #393939;">
+                                        <div class="modal-body">
+                                            <div class="container">
+                                                <div class="col-md-12">
+                                                    <a href="#"><img src="assets/cardfilme.jpg"
+                                                            class="img-fluid rounded mx-auto d-block" alt=""></a>
+                                                </div>
+                                                <br>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <h5>VINGADORES GUERRA INFINITA</h5>
+                                                    </div>
+                                                    <div class="col-1">
+                                                        <img src="assets/CLASSIFICAÇÃO INFICATIVA/14 ANOS.png"
+                                                            style="max-width: 40px" alt="">
+                                                    </div>
+                                                    <div class="col-5" style="font-size: 10px;">
+                                                        <p>ao clicar no play sera redirecionado a outra página</p>
+                                                    </div>
+                                                </div>
+                                                <h6>SINOPSE: </h6>
+                                                <div class="col-md-10" style="font-size: 13px;">
+                                                    <P>HOMEM DE FERRO, THOR, HULK E OS VINGADORES SE UNEM PARA
+                                                        COMBATER
+                                                        SEU
+                                                        INIMIGO MAIS PODEROSO, O MALIGNO THANOS. EM UMA MISSÃO PARA
+                                                        COLETAR
+                                                        TODAS AS SEIS PEDRAS INFINITAS, THANOS PLANEJA USÁ-LAS PARA
+                                                        INFLIGIR
+                                                        SUA
+                                                        VONTADE MALÉFICA SOBRE A REALIDADE.</P>
+                                                </div>
+                                                <h6>ELENCO: </h6>
+                                                <div class="col-md-10" style="font-size: 13px;">
+                                                    <P>HOMEM DE FERRO.</P>
+                                                </div>
+                                                <h6>GÊNERO: </h6>
+                                                <div class="col-md-10" style="font-size: 13px;">
+                                                    <P>AÇÃO E AVENTURA</P>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- fim modal editar -->
+
+                            <td><a href="#"><img src="../view/botao-excluir.png" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal1"></a></td>
+
+                            <!-- modal excluir -->
+                            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content" style="background: #393939;">
+                                        <div class="modal-body">
+                                            <div class="container">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
-
 </body>
 
 </html>
