@@ -41,7 +41,6 @@
             padding: 15px;
             text-align: center;
             background-color: #393939;
-            ;
             border-radius: 16px;
         }
 
@@ -121,6 +120,13 @@
         #submit:hover {
             background-color: #5d6be8;
         }
+
+        #edit-button{
+            position: relative;
+            width: 350px;
+            margin-left: 100px;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 
@@ -156,20 +162,20 @@
                 <legend><b>CONFIGURAÇÃO</b></legend>
                 <br>
                 <div class="inputBox">
-                    <label for="nome" class="labelInput">NOME: </label><br>
+                    <label for="nome" class="labelInput">NOME</label><br>
                     <label for="nome" class="label-data">Roberto da Silva Machado</label>
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <label for="email" class="labelInput">EMIAL: </label><br>
+                    <label for="email" class="labelInput">EMIAL</label><br>
                     <label for="email" class="label-data">roberto@gmail.com</label>
                 </div>
                 <br><br>
-                <label for="data_nascimento"><b>DATA DE NASCIMENTO:</b></label><br>
+                <label for="data_nascimento"><b>DATA DE NASCIMENTO</b></label><br>
                 <label for="data_nascimento" class="label-data"><b>00/00/0000</b></label>
                 <br><br><br>
                 <div class="inputBox">
-                    <label for="matricula" class="labelInput">MATRÍCULA:</label><br>
+                    <label for="matricula" class="labelInput">MATRÍCULA</label><br>
                     <label for="matricula" class="label-data">2222****</label>
                 </div>
                 <br><br>
@@ -178,9 +184,6 @@
                     <label for="senha" class="label-data-password">********</label>
                 </div>
                 <br><br>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Open modal for @mdo</button>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@fat">Open modal for @fat</button>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Open modal for @getbootstrap</button>
 
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
@@ -209,6 +212,7 @@
                 </div>
                 </div>
                 <br><br>
+                <button id="edit-button" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="edit-nome">EDITAR</button>
                 <input type="submit" name="submit" id="submit">
             </form>
         </div>
