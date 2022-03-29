@@ -22,10 +22,8 @@
 
         .box {
             color: white;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            position: relative;
+            display: inline-block;
             background-color: #00000099;
             padding: 15px;
             border-radius: 15px;
@@ -42,6 +40,7 @@
             padding: 15px;
             text-align: center;
             background-color: #393939;
+            ;
             border-radius: 16px;
         }
 
@@ -121,13 +120,6 @@
         #submit:hover {
             background-color: #5d6be8;
         }
-
-        #edit-button{
-            position: relative;
-            width: 350px;
-            margin-left: 0px;
-            margin-bottom: 20px;
-        }
     </style>
 </head>
 
@@ -163,20 +155,20 @@
                 <legend><b>CONFIGURAÇÃO</b></legend>
                 <br>
                 <div class="inputBox">
-                    <label for="nome" class="labelInput">NOME</label><br>
+                    <label for="nome" class="labelInput">NOME: </label><br>
                     <label for="nome" class="label-data">Roberto da Silva Machado</label>
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <label for="email" class="labelInput">EMIAL</label><br>
+                    <label for="email" class="labelInput">EMIAL: </label><br>
                     <label for="email" class="label-data">roberto@gmail.com</label>
                 </div>
                 <br><br>
-                <label for="data_nascimento"><b>DATA DE NASCIMENTO</b></label><br>
+                <label for="data_nascimento"><b>DATA DE NASCIMENTO:</b></label><br>
                 <label for="data_nascimento" class="label-data"><b>00/00/0000</b></label>
                 <br><br><br>
                 <div class="inputBox">
-                    <label for="matricula" class="labelInput">MATRÍCULA</label><br>
+                    <label for="matricula" class="labelInput">MATRÍCULA:</label><br>
                     <label for="matricula" class="label-data">2222****</label>
                 </div>
                 <br><br>
@@ -185,23 +177,31 @@
                     <label for="senha" class="label-data-password">********</label>
                 </div>
                 <br><br>
-
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="btn-group" role="group">
+                    <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      EDITAR
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                      <li><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Alterar:">EDITAR DADOS</button></li>
+                      <li><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Nova senha:">MUDAR SENHA</button></li>
+                    </ul>
+                  </div>
+                <div style="color: #393939;" class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">EDIÇÃO</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <form>
                         <div class="mb-3">
-                            <label for="recipient-name" class="col-form-label">Recipient:</label>
+                            <label for="recipient-name" class="col-form-label">TIPO DE DADO:</label>
                             <input type="text" class="form-control" id="recipient-name">
                         </div>
                         <div class="mb-3">
-                            <label for="message-text" class="col-form-label">Message:</label>
-                            <textarea class="form-control" id="message-text"></textarea>
+                            <label for="message-text" class="col-form-label">ALTERAÇÃO:</label>
+                            <textarea class="form-control" id="message-text">Confirmar:</textarea>
                         </div>
                         </form>
                     </div>
@@ -213,7 +213,6 @@
                 </div>
                 </div>
                 <br><br>
-                <button id="edit-button" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="edit-nome">EDITAR</button>
                 <input type="submit" name="submit" id="submit">
             </form>
         </div>
@@ -228,7 +227,7 @@
         var modalBodyInput = exampleModal.querySelector('.modal-body input')
         console.log("CHEGUEI 2");
 
-        modalTitle.textContent = 'New message to ' + recipient
+        modalTitle.textContent = 'EDIÇÃO '
         modalBodyInput.value = recipient
     })
     console.log("CHEGUEI 3");
