@@ -10,11 +10,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="/style/configuracaoDeConta.css">
+    <link rel="stylesheet" href="/style/style.css">
     <title>Configuração de Conta | UfersaFlix</title>
 </head>
 
-<body>
+<body style="background-color: #393939; color: white;">
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
@@ -40,89 +40,64 @@
             </div>
         </div>
     </nav>
-    <div class="box">
-        <div class="sidenav">
-            <form action="">
-                <legend><b>CONFIGURAÇÃO</b></legend>
-                <br>
-                <div class="inputBox">
-                    <label for="nome" class="labelInput">NOME: </label><br>
-                    <label for="nome" class="label-data">Roberto da Silva Machado</label>
-                </div>
-                <br><br>
-                <div class="inputBox">
-                    <label for="email" class="labelInput">EMIAL: </label><br>
-                    <label for="email" class="label-data">roberto@gmail.com</label>
-                </div>
-                <br><br>
-                <label for="data_nascimento"><b>DATA DE NASCIMENTO:</b></label><br>
-                <label for="data_nascimento" class="label-data"><b>00/00/0000</b></label>
-                <br><br><br>
-                <div class="inputBox">
-                    <label for="matricula" class="labelInput">MATRÍCULA:</label><br>
-                    <label for="matricula" class="label-data">2222****</label>
-                </div>
-                <br><br>
-                <div class="inputBox">
-                    <label for="senha" class="labelInput">Senha</label><br>
-                    <label for="senha" class="label-data-password">********</label>
-                </div>
-                <br><br>
-                <div class="btn-group" role="group">
-                    <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                      EDITAR
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                      <li><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Alterar:">EDITAR DADOS</button></li>
-                      <li><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Nova senha:">MUDAR SENHA</button></li>
-                    </ul>
-                  </div>
-                <div style="color: #393939;" class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">EDIÇÃO</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                        <div class="mb-3">
-                            <label for="recipient-name" class="col-form-label">TIPO DE DADO:</label>
-                            <input type="text" class="form-control" id="recipient-name">
+    <div class="container">
+        <br>
+        <h2>CONFIGURAÇÃO DE CONTA</h2>
+        <br>
+
+        <form action="">
+            <div class="mb-3">
+                <label for="nomeUsuario" class="form-label">NOME</label>
+                <input type="text" class="form-control" id="nomeUsuario">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">E-MAIL</label>
+                <input type="email" class="form-control" id="email">
+            </div>
+            <div class="mb-3">
+                <label for="matricula" class="form-label">MATRICULA</label>
+                <input type="text" class="form-control" id="matricula">
+            </div>
+            <div class="mb-3">s
+                <label for="data" class="form-label">DATA
+                    NASCIMENTO</label>
+                <input type="date" class="form-control" id="data">
+            </div>
+
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalSenha">MUDAR SENHA</button>
+
+            <div class="modal fade" id="modalSenha" tabindex="-1" aria-labelledby="modalSenha"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content" style="background: #393939;">
+                        <div class="modal-body">
+                            <div class="container">
+                                <form action="">
+                                    <div class="mb-3">
+                                        <label for="senhaAtual" class="form-label">SENHA ATUAL</label>
+                                        <input type="password" class="form-control" id="senhaAtual">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="senhaNova" class="form-label">NOVA SENHA</label>
+                                        <input type="password" class="form-control" id="senhaNova">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="confNovaSenha" class="form-label">CONFIRMAR NOVA SENHA</label>
+                                        <input type="password" class="form-control" id="confNovaSenha">
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary">Editar</button>
+                                </form>
+                            </div>
                         </div>
-                        <div class="mb-3">
-                            <label for="message-text" class="col-form-label">ALTERAÇÃO:</label>
-                            <textarea class="form-control" id="message-text">Confirmar:</textarea>
-                        </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Send message</button>
-                    </div>
                     </div>
                 </div>
-                </div>
-                <br><br>
-                <input type="submit" name="submit" id="submit">
-            </form>
-        </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">SALVAR</button>
+        </form>
+
+    </div>
 </body>
-<script>
-    var exampleModal = document.getElementById('exampleModal')
-    exampleModal.addEventListener('show.bs.modal', function (event) {
-        console.log("CHEGUEI 1");
-        var button = event.relatedTarget
-        var recipient = button.getAttribute('data-bs-whatever')
-        var modalTitle = exampleModal.querySelector('.modal-title')
-        var modalBodyInput = exampleModal.querySelector('.modal-body input')
-        console.log("CHEGUEI 2");
-
-        modalTitle.textContent = 'EDIÇÃO '
-        modalBodyInput.value = recipient
-    })
-    console.log("CHEGUEI 3");
-
-</script>
 
 </html>

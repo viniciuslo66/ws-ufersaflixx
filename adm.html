@@ -95,30 +95,28 @@
                                     <div class="modal-content" style="background: #393939;">
                                         <div class="modal-body">
                                             <div class="container">
-                                                <form action="">
+                                                <form>
                                                     <div class="mb-3">
-                                                        <label for="exampleInputNome" class="form-label">NOME</label>
-                                                        <input type="text" class="form-control" id="exampleInputNome">
+                                                        <label for="nomeUsuario" class="form-label">NOME</label>
+                                                        <input type="text" class="form-control" id="nomeUsuario">
                                                     </div>
                                                     <div class="mb-3">
-                                                        <label for="exampleInputEmail" class="form-label">E-MAIL</label>
-                                                        <input type="email" class="form-control" id="exampleInputEmail">
+                                                        <label for="email" class="form-label">E-MAIL</label>
+                                                        <input type="email" class="form-control" id="email">
                                                     </div>
                                                     <div class="mb-3">
-                                                        <label for="exampleInputMatricuLa"
-                                                            class="form-label">MATRICULA</label>
-                                                        <input type="text" class="form-control"
-                                                            id="exampleInputMatricuLa">
+                                                        <label for="matricula" class="form-label">MATRICULA</label>
+                                                        <input type="text" class="form-control" id="matricula">
                                                     </div>
                                                     <div class="mb-3">
-                                                        <label for="exampleInputData" class="form-label">DATA
+                                                        <label for="data" class="form-label">DATA
                                                             NASCIMENTO</label>
-                                                        <input type="date" class="form-control" id="exampleInputData">
+                                                        <input type="date" class="form-control" id="data">
                                                     </div>
 
                                                     <button type="submit" class="btn btn-primary">Editar</button>
                                                 </form>
-                                            </div>   
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -134,7 +132,7 @@
                             <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
                                 aria-hidden="true">
                                 <div class="modal-dialog">
-                                    <div class="modal-content"  style="background: #393939;">
+                                    <div class="modal-content" style="background: #393939;">
                                         <div class="modal-header">
                                             <h5 class="modal-title" id="exampleModalLabel">EXCLUIR USUÁRIO</h5>
                                         </div>
@@ -159,8 +157,8 @@
                             <td>lucas@gmail.com</td>
                             <td>2222****</td>
                             <td>00/00/0000</td>
-                            <td><a href="admUsuarioEdit.html"><img src="view/botao-editar (1).png"></a></td>
-                            <td><a href="admUsuarioDelete.html"><img src="view/botao-excluir.png"></a></td>
+                            <td><a href="#"><img src="view/botao-editar (1).png"></a></td>
+                            <td><a href="#"><img src="view/botao-excluir.png"></a></td>
                         </tr>
                         <tr>
                             <th scope="row">3</th>
@@ -169,14 +167,129 @@
                             <td>pedro@gmail.com</td>
                             <td>2222****</td>
                             <td>00/00/0000</td>
-                            <td><a href="admUsuarioEdit.html"><img src="view/botao-editar (1).png"></a></td>
-                            <td><a href="admUsuarioDelete.html"><img src="view/botao-excluir.png"></a></td>
+                            <td><a href="#"><img src="view/botao-editar (1).png"></a></td>
+                            <td><a href="#"><img src="view/botao-excluir.png"></a></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
 
-            <!-- 2º tap -->
+            <!-- 3º tap -->
+
+            <div class="tab-pane fade" id="nav-catalogo" role="tabpanel" aria-labelledby="nav-catalogo-tap">
+                <table class="table table-hover table-bordered" style="background-color: white;">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">NOME</th>
+                            <th scope="col">SINOPSE</th>
+                            <th scope="col">IMAGEM</th>
+                            <th scope="col">TAGS</th>
+                            <th scope="col">LINK</th>
+                            <th scope="col">GÊNERO</th>
+                            <th scope="col">ELENCO</th>
+                            <th scope="col">DIRETOR</th>
+                            <th scope="col">EDITAR</th>
+                            <th scope="col">DELETAR</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>VINGADORES GUERRA INFINITE</td>
+                            <td>THANOS MATOU TODO MUNDO</td>
+                            <td><img src="assets/cardfilme.jpg" alt="" style="width: 200px;"></td>
+                            <td>#homemdeferro #marvel</td>
+                            <td><a href="#">link</a></td>
+                            <td>AÇÃO E AVENTURA</td>
+                            <td>HOMEM DE FERRO</td>
+                            <td>ALGUÉM NÃO IMPORTANTE</td>
+                            <td><a href="#"><img src="view/botao-editar (1).png" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModaleditarfilme"></a></td>
+
+                            <!-- modal editar -->
+
+                            <div class="modal fade" id="exampleModaleditarfilme" tabindex="-1"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content" style="background: #393939;">
+                                        <div class="modal-body">
+                                            <div class="container">
+                                                <form action="">
+                                                    <div class="mb-3">
+                                                        <label for="nome" class="form-label">NOME</label>
+                                                        <input type="text" class="form-control" id="nome">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="sinopse" class="form-label">SINOPSE</label>
+                                                        <input type="text" class="form-control" id="sinopse">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="tumb" class="form-label">IMAGEM</label>
+                                                        <input type="file" class="form-control" id="tumb">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="tags" class="form-label">TAGS</label>
+                                                        <input type="tags" class="form-control" id="tags">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="link" class="form-label">LINK</label>
+                                                        <input type="url" class="form-control" id="link">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="genero" class="form-label">GÊNERO</label>
+                                                        <input type="text" class="form-control" id="genero">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="elenco" class="form-label">ELENCO</label>
+                                                        <input type="text" class="form-control" id="elenco">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="diretor" class="form-label">DIRETOR</label>
+                                                        <input type="text" class="form-control" id="diretor">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="diretor" class="form-label">DIRETOR</label>
+                                                        <input type="text" class="form-control" id="diretor">
+                                                    </div>
+                                                    <button type="submit" class="btn btn-primary">Editar</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- fim modal editar -->
+
+                            <td><a href="#"><img src="view/botao-excluir.png" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModalExcluirFilme"></a></td>
+
+                            <!-- modal excluir -->
+                            <div class="modal fade" id="exampleModalExcluirFilme" tabindex="-1"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content" style="background: #393939;">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">EXCLUIR USUÁRIO</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h2>REALMENTE DESEJA EXCLUIR ESSE FILME</h2>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">CANCELAR</button>
+                                            <button type="button" class="btn btn-primary">CONFIMAR</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- 3º tap -->
 
             <div class="tab-pane fade" id="nav-adicionarfilme" role="tabpanel" aria-labelledby="nav-adicionarfilme-tab">
                 <div class="container-fluid">
@@ -248,110 +361,6 @@
                         </div>
                     </form>
                 </div>
-            </div>
-
-            <!-- 3º tap -->
-            <div class="tab-pane fade" id="nav-catalogo" role="tabpanel" aria-labelledby="nav-catalogo-tap">
-                <table class="table table-hover table-bordered" style="background-color: white;">
-                    <thead>
-                        <tr>
-                            <th scope="col">ID</th>
-                            <th scope="col">NOME</th>
-                            <th scope="col">SINOPSE</th>
-                            <th scope="col">IMAGEM</th>
-                            <th scope="col">TAGS</th>
-                            <th scope="col">LINK</th>
-                            <th scope="col">GÊNERO</th>
-                            <th scope="col">ELENCO</th>
-                            <th scope="col">DIRETOR</th>
-                            <th scope="col">EDITAR</th>
-                            <th scope="col">DELETAR</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>VINGADORES GUERRA INFINITE</td>
-                            <td>THANOS MATOU TODO MUNDO</td>
-                            <td><img src="assets/cardfilme.jpg" alt="" style="width: 200px;"></td>
-                            <td>#homemdeferro #marvel</td>
-                            <td><a href="index.html">link</a></td>
-                            <td>AÇÃO E AVENTURA</td>
-                            <td>HOMEM DE FERRO</td>
-                            <td>ALGUÉM NÃO IMPORTANTE</td>
-                            <td><a href="#"><img src="view/botao-editar (1).png" data-bs-toggle="modal"
-                                        data-bs-target="#exampleModaleditarfilme"></a></td>
-
-                            <!-- modal editar -->
-                            <div class="modal fade" id="exampleModaleditarfilme" tabindex="-1"
-                                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-lg">
-                                    <div class="modal-content" style="background: #393939;">
-                                        <div class="modal-body">
-                                            <div class="container">
-                                                <div class="col-md-12">
-                                                    <a href="#"><img src="assets/cardfilme.jpg"
-                                                            class="img-fluid rounded mx-auto d-block" alt=""></a>
-                                                </div>
-                                                <br>
-                                                <div class="row">
-                                                    <div class="col-6">
-                                                        <h5>VINGADORES GUERRA INFINITA</h5>
-                                                    </div>
-                                                    <div class="col-1">
-                                                        <img src="assets/CLASSIFICAÇÃO INFICATIVA/14 ANOS.png"
-                                                            style="max-width: 40px" alt="">
-                                                    </div>
-                                                    <div class="col-5" style="font-size: 10px;">
-                                                        <p>ao clicar no play sera redirecionado a outra página</p>
-                                                    </div>
-                                                </div>
-                                                <h6>SINOPSE: </h6>
-                                                <div class="col-md-10" style="font-size: 13px;">
-                                                    <P>HOMEM DE FERRO, THOR, HULK E OS VINGADORES SE UNEM PARA
-                                                        COMBATER
-                                                        SEU
-                                                        INIMIGO MAIS PODEROSO, O MALIGNO THANOS. EM UMA MISSÃO PARA
-                                                        COLETAR
-                                                        TODAS AS SEIS PEDRAS INFINITAS, THANOS PLANEJA USÁ-LAS PARA
-                                                        INFLIGIR
-                                                        SUA
-                                                        VONTADE MALÉFICA SOBRE A REALIDADE.</P>
-                                                </div>
-                                                <h6>ELENCO: </h6>
-                                                <div class="col-md-10" style="font-size: 13px;">
-                                                    <P>HOMEM DE FERRO.</P>
-                                                </div>
-                                                <h6>GÊNERO: </h6>
-                                                <div class="col-md-10" style="font-size: 13px;">
-                                                    <P>AÇÃO E AVENTURA</P>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- fim modal editar -->
-
-                            <td><a href="#"><img src="view/botao-excluir.png" data-bs-toggle="modal"
-                                        data-bs-target="#exampleModalExcluirFilme"></a></td>
-
-                            <!-- modal excluir -->
-                            <div class="modal fade" id="exampleModalExcluirFilme" tabindex="-1"
-                                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-lg">
-                                    <div class="modal-content" style="background: #393939;">
-                                        <div class="modal-body">
-                                            <div class="container">
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </tr>
-                    </tbody>
-                </table>
             </div>
         </div>
     </div>
