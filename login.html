@@ -33,7 +33,7 @@
                                 style="background-color: #393939; border-color: black; color: white;">
                         </div>
                         <div class="form-group">
-                            <label>PASSWORD</label>
+                            <label>PASSWORD: </label>
                             <input type="password" class="form-control" placeholder="Senha"
                                 style="background-color: #393939; border-color: black; color: white">
                         </div>
@@ -43,8 +43,47 @@
                         </a>
                         <br>
                         <div class="d-grid gap-2 col-6 mx-auto">
-                            <a href="index.html"><button class="btn btn-primary" type="button">ENTRAR</button></a>
-                            <a href="cadastro.html"><button class="btn btn-primary" type="button">CADASTRAR</button></a>
+                            <button class="btn btn-primary" type="button" onclick="validacao()">ENTRAR</button>
+                            <button class="btn btn-primary" type="button" data-bs-toggle="modal"
+                                data-bs-target="#cadastrar">CADASTRAR</button>
+
+                            <div class="modal fade" id="cadastrar" tabindex="-1" aria-labelledby="cadastrar"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content" style="background: #393939;">
+                                        <div class="modal-body">
+                                            <div class="container">
+                                                <form> 
+                                                    <h3>CADASTRO</h3>
+                                                    <div class="mb-3">
+                                                        <label for="nomeUsuario" class="form-label">NOME</label>
+                                                        <input type="text" class="form-control" id="nomeUsuario">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="email" class="form-label">E-MAIL</label>
+                                                        <input type="email" class="form-control" id="email">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="matricula" class="form-label">MATRICULA</label>
+                                                        <input type="text" class="form-control" id="matricula">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="data" class="form-label">DATA
+                                                            NASCIMENTO</label>
+                                                        <input type="date" class="form-control" id="data">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="senha" class="form-label">SENHA</label>
+                                                        <input type="password" class="form-control" id="senha">
+                                                    </div>
+
+                                                    <button type="submit" class="btn btn-primary">CADASTRAR</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </form>
                 </div>
