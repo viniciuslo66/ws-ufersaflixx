@@ -1,4 +1,7 @@
-function validarAdicionarFilme() {
+
+// VALIDAÇÕES DA PÁGINA ( ADM )
+// ======================================================
+function validarAdicionarFilme() { 
     var imagem_apresentacao = document.getElementById("imagem_apresentacao").files;
     var nome_filme = document.getElementById("nome_filme").value;
     var sinopse_filme = document.getElementById("sinopse_filme").value;
@@ -47,6 +50,9 @@ function validarAdicionarFilme() {
     }
 }
 
+
+// ======================================================
+
 function validarEditarCatalogo() {
     var tumb = document.getElementById("tumb").files;
     var nome = document.getElementById("nome").value;
@@ -93,5 +99,38 @@ function validarEditarCatalogo() {
 
     if(erro == false) {
         alert("Filme editado com sucesso!");
+    }
+}
+
+
+// ======================================================
+
+function validarEditarUsuario(){
+
+    let nome = document.getElementById('nomeUsuario').value;
+    let email = document.getElementById('email').value;
+    let matricula = document.getElementById('matricula').value;
+    let dataNascimento = document.getElementById('data').value;
+    let variavelDeControle = true;
+
+    if( nome == "" ){
+        alert("Campo nome não preenchido.");
+        variavelDeControle = false;
+    }
+    if( email == "" ){
+        alert("Campo e-mail não preenchido.");
+        variavelDeControle = false;
+    }
+    if( matricula == "" ){
+        alert("Campo de matrícula não preenchido.");
+        variavelDeControle = false;
+    }
+    if( dataNascimento == "" ){
+        alert("Campo de data de nascimento não preenchido.");
+        variavelDeControle = false;
+    }
+
+    if(!variavelDeControle){
+        alert("Não foi possível editar usuário\nConfira os campos digitados.")
     }
 }
